@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Sidebar, { Icon } from "./Sidebar";
 import "./Dashboard.css";
-import "./Presupuestos.css";
+import "./presupuestos.css";
 
 const PRESUPUESTOS = [
   { id: 1, categoria: "Alimentación", gastado: 350000, limite: 500000 },
