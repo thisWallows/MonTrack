@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Sidebar, { Icon } from "./Sidebar";
 import "./Dashboard.css";
-import "./Perfil.css";
+import "./perfil.css";
 
 const USUARIO = { nombre: "Esteban Ramirez", correo: "esteban@email.com" };
 
