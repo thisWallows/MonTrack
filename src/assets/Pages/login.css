@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+* { box-sizing: border-box; }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fb;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #111827;
+}
+
+.header { padding: 0 64px; height: 24px; display: flex; align-items: center; }
+.logo { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 500; }
+
+.main { flex: 1; display: flex; justify-content: center; align-items: center; padding: 24px; }
+
+.card {
+  width: 100%;
+  max-width: 463px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.title { margin: 0 0 12px; font-size: 28px; font-weight: 600; letter-spacing: -0.01em; color:#111827; }
+.subtitle { margin: 0 0 34px; font-size: 14px; color: #6b7280; }
+
+.field { margin-bottom: 22px; }
+.field label { display: block; margin-bottom: 10px; font-size: 14px; font-weight: 500; }
+
+.field input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #111827;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.field input::placeholder { color: #9ca3af; }
+.field input:focus { border-color: #111827; box-shadow: 0 0 0 3px rgba(17,24,39,.08); }
+
+.password-wrapper { position: relative; }
+.password-wrapper input { padding-right: 80px; }
+.toggle-btn {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  font: 500 12px "Inter", sans-serif;
+  color: #111827;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.row { display: flex; justify-content: space-between; align-items: center; margin: 4px 0 24px; }
+
+.checkbox { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; }
+.checkbox input {
+  width: 16px; height: 16px; margin: 0;
+  accent-color: #111827;
+  cursor: pointer;
+}
+
+.link {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.link:hover { color: #374151; }
+.link-strong { font-size: 14px; font-weight: 600; }
+
+.submit-btn {
+  width: 100%;
+  height: 48px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font: 600 16px "Inter", sans-serif;
+  cursor: pointer;
+  transition: background .15s;
+}
+.submit-btn:hover { background: #1f2937; }
+
+.signup { margin: 30px 0 0; text-align: center; font-size: 14px; color: #6b7280; }
+
+.footer { text-align: center; font-size: 12px; color: #9ca3af; padding: 24px 0; }
+
+@media (max-width: 520px) {
+  .header { padding: 16px 20px; height: auto; }
+  .card { padding: 28px 22px; }
+}
