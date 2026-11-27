@@ -3,7 +3,7 @@ import "./DemoVideo.css";
 
 // Opción A: video local en /public/demo.mp4 (deja YOUTUBE_ID vacío)
 // Opción B: YouTube, solo el ID (lo que va después de "v=")
-const YOUTUBE_ID = "OCz7jqsrqRg";
+const YOUTUBE_ID = "bl3vcgs5UL4";
 const LOCAL_SRC = "/demo.mp4";
 const POSTER = "/demo-poster.png";
 
