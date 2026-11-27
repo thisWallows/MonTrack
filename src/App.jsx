@@ -6,8 +6,10 @@ import NuevoMovimiento from "./assets/Pages/NuevoMovimiento.jsx";
 import Cuentas from "./assets/Pages/CuentasPage.jsx";
 import Presupuestos from "./assets/Pages/presupuesto.jsx";
 import Perfil from "./assets/Pages/Perfil.jsx";
+import DemoVideo from "./assets/Pages/DemoVideo.jsx";
 
-const PAGINAS = ["dashboard", "movimientos", "nuevo-movimiento", "cuentas", "presupuestos", "metas", "estadisticas", "configuracion"];
+
+const PAGINAS = ["dashboard", "movimientos", "nuevo-movimiento", "cuentas", "presupuestos", "metas", "estadisticas", "configuracion","demo-video"];
 
 export default function App() {
   const [sesionIniciada, setSesionIniciada] = useState(false);
@@ -46,6 +48,9 @@ export default function App() {
   }
   if (pagina === "configuracion") {
     return <Perfil onNavigate={irA} onLogout={() => setSesionIniciada(true)} />;
+  }
+  if (pagina === "demo-video") {
+    return <DemoVideo />;
   }
 
   return <Dashboard onNavigate={irA} movimientos={movimientos} />;

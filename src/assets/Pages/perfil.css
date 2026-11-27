@@ -1,4 +1,4 @@
-/* Prefijo pf- para no chocar con otras páginas */
+
 
 .pf-stack { display: flex; flex-direction: column; gap: 24px; max-width: 900px; }
 

@@ -17,6 +17,7 @@ const ICONS = {
   check: (<path d="M5 12l5 5L20 7" />),
   wallet: (<><path d="M19 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0 0 4h14v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5" /><path d="M16 13h2" /></>),
   bank: (<><path d="M3 10l9-6 9 6" /><path d="M5 10v8" /><path d="M10 10v8" /><path d="M14 10v8" /><path d="M19 10v8" /><path d="M3 21h18" /></>),
+  play: (<><circle cx="12" cy="12" r="9" /><path d="M10 8.5l5 3.5-5 3.5z" /></>),
 };
 
 export function Icon({ name, size = 18 }) {
@@ -35,6 +36,8 @@ const MENU = [
   { id: "presupuestos", label: "Presupuestos" },
   { id: "metas", label: "Metas de ahorro" },
   { id: "estadisticas", label: "Estadísticas" },
+  { id: "demo-video", label: "Demo" },
+
 ];
 
 export default function Sidebar({ activo, onNavigate }) {
